@@ -8,4 +8,3 @@ class DatabaseManager {
          return false;
       }
 };
-

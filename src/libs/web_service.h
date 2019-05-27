@@ -3,8 +3,7 @@
 class WebService {
    public:
       void LogError( std::string msg ) {
-         /* логика, включающая 
+         /* логика, включающая
          работу с сетевым соединением*/
       }
 };
-
