@@ -7,7 +7,6 @@
 #include"web_service.h"
 #include"interface_database_manager.h"
 
-
 class EntryAnalyzer {
    public:
       EntryAnalyzer() : pDbManager( std::make_unique<DatabaseManager>() ) {

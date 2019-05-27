@@ -11,5 +11,3 @@ class FakeDatabaseManager : public IDatabaseManager {
          return WillBeValid;
       }
 };
-
-
