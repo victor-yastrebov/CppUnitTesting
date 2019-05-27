@@ -5,7 +5,6 @@
 #include"database_manager.h"
 #include"web_service.h"
 
-
 class EntryAnalyzer {
    public:
       bool Analyze( std::string ename ) {
@@ -13,12 +12,19 @@ class EntryAnalyzer {
             webService.LogError( "Error: " + ename );
             return false;
          }
-         if( false == dbManager.IsValid( ename ) )
+
+         if( false == IsValid( ename ) )
             return false;
 
          return true;
       }
+
+   protected:
+      virtual bool IsValid( std::string ename ) {
+         return dbManager.IsValid( ename );
+      }
+
    private:
-      DatabaseManager   dbManager;
+      DatabaseManager dbManager;
            WebService   webService;
 };
