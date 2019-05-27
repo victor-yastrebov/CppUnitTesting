@@ -1,0 +1,3 @@
+src/buildCmake/*
+build-src-MinGW-*
+*.user
