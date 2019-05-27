@@ -17,7 +17,8 @@
       EntryAnalyzer ea;
       const bool ret = ea.Analyze( "e" );
 
-      std::cout << "ret is: " << ret << std::endl;
+      std::cout << "Production code is ok, return code is: " << ret << std::endl;
+      std::cout << "Done!" << std::endl;
       return 0;
    }
 #endif
