@@ -21,6 +21,12 @@ include_directories(
    ${directories_test}
 )
 
+# If DO_TEST compile flag is ON than we produce EntryAnalyzer class that is adapted for unit-testing
+# If DO_TEST compile flag is OFF than we produce EntryAnalyzer production class
+add_definitions(
+   -DDO_TEST
+)
+
 # set up GTest project
 set(gtest_disable_pthreads on)
 add_subdirectory(${PROJECT_SOURCE_DIR}/3dparty/google_test/)

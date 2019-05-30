@@ -1,10 +1,11 @@
-#define TESTING
+#ifdef DO_TEST
+#include"gtest\gtest.h"
+#else
 #include<iostream>
 #include"entry_analyzer.h"
+#endif
 
-#include"gtest\gtest.h"
-
-#ifdef TESTING
+#ifdef DO_TEST
    int main( int argc, char **argv )
    {
       ::testing::InitGoogleTest( &argc, argv );
