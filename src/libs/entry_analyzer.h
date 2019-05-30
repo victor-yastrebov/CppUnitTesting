@@ -5,7 +5,6 @@
 #include"database_manager.h"
 #include"web_service.h"
 
-
 class EntryAnalyzer {
    public:
       bool Analyze( std::string ename ) {
