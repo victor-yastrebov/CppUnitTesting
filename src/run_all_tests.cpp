@@ -1,6 +1,7 @@
 #define TESTING
 #include<iostream>
 #include"entry_analyzer.h"
+#include"database_manager.h"
 
 #include"gtest\gtest.h"
 
@@ -14,7 +15,7 @@
 #else
    int main( int argc, char **argv )
    {
-      EntryAnalyzer ea;
+      EntryAnalyzer<DatabaseManager> ea;
       const bool ret = ea.Analyze( "e" );
 
       std::cout << "Production code is ok, return code is: " << ret << std::endl;
